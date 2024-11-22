@@ -32,7 +32,7 @@ Este projeto é uma API para gerenciar grupos e participantes em um sorteio de a
 
 ### **Saber Quem Você Deve Presentear**
 - Método: `GET`
-- Endpoint: `/api/v1/match/{user_id}`
+- Endpoint: `/api/v1/user/{user_id}/match`
 - Descrição: Retorna quem deve ser presenteado pelo ID do usuário.
 
 ---

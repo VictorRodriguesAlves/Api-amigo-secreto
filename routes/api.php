@@ -11,7 +11,13 @@ Route::prefix('/v1')->group(function () {
        Route::post('/addUser', [GroupController::class, 'addUser'])->name('api.group.addUser');
    });
 
-   Route::post('/user', [UserController::class, 'createUser'])->name('api.user.create');
+   Route::prefix('/user')->group(function () {
+       Route::post('/', [UserController::class, 'createUser'])->name('api.user.create');
+       Route::get('/{user}/match', [UserController::class, 'getMatch'])->name('api.user.get.match');
+
+
+   });
+
 
 });
 
