@@ -14,7 +14,7 @@ Este projeto é uma API para gerenciar grupos e participantes em um sorteio de a
 
 ### **Adicionar Participante no Grupo**
 - Método: `POST`
-- Endpoint: `/api/v1/group/add-participant`
+- Endpoint: `/api/v1/group/addUser`
 - Corpo da Requisição:
     - `user_id` (inteiro): ID do usuário.
     - `group_id` (inteiro): ID do grupo.
